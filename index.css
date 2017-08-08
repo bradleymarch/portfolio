@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'EB Garamond', serif;
+  background-color: black;
+	/*background: rgba(0,0,0,0.50) url("blue.jpg") no-repeat center center fixed;
+	  -webkit-animation: fadein 2s;
+  	background-size: 100vw 100vh;*/
+  color: white;
+}
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 48px;
+  padding-top: 80px;
+}
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: teal;
+}
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: teal;
+  padding-top: 40px;
+}
+.projectsDiv {
+  text-align: center;
+}
+.projectsP {
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.appetitePic {
+  text-align: center;
+  height: 15%;
+  width: 15%;
+}
+.beerbossPic {
+  text-align: center;
+  height: 15%;
+  width: 15%;
+}
+.weatherwearPic {
+  text-align: center;
+  height: 25%;
+  width: 25%;
+}
+.hr1 {
+   width: 66%;
+   display: block;
+   height: 1px;
+   border: 0;
+   margin-bottom: 25px;
+   border-top: 1px solid white;
+}
+.hr2 {
+   width: 66%;
+   display: block;
+   height: 1px;
+   border: 0;
+   margin-top: 25px;
+   border-top: 1px solid white;
+}
+.hr3, .hr4, .hr5 {
+    display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid teal;
+   margin-top: 0px;
+   width: 25%;
+}
+.bioP {
+  padding: 30px;
+}
+.mePic {
+  height: 45%;
+  width: 45%;
+  display: block;
+  margin: auto;
+}
+.bio {
+  width: 75%;
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+}
+.topNav {
+  height: 60px;
+  width: 100%;
+  z-index: 11;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  text-align: center;
+  padding-top: 20px;
+}
+nav a {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+  color: teal;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 4px;
+}
+nav a:hover {
+  color: black;
+}
+.navA {
+  margin-top:20px;
+}
+.titleHeader {
+
+}
