@@ -28,6 +28,12 @@ h3 {
   color: teal;
   padding-top: 40px;
 }
+.footer {
+  color: teal;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .projectsDiv {
   text-align: center;
 }
