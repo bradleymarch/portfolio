@@ -19,6 +19,40 @@ html {
   font-family: 'EB Garamond', serif;
   color: black;
 }
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  25% { opacity:0.5; }
+  50%  { opacity:1; }
+  75% { opacity:0.5; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  25% { opacity:0.5; }
+  50%  { opacity:1; }
+  75% { opacity:0.5; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  25% { opacity:0.5; }
+  50%  { opacity:1; }
+  75% { opacity:0.5; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  25% { opacity:0.5; }
+  50%  { opacity:1; }
+  75% { opacity:0.5; }
+  100% { opacity:0; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 10s infinite;
+   -moz-animation: flickerAnimation 10s infinite;
+   -o-animation: flickerAnimation 10s infinite;
+    animation: flickerAnimation 10s infinite;
+}
 #top {
   padding-bottom: 20px;
   -webkit-animation: fadein 2s;
