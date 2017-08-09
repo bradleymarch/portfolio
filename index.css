@@ -1,19 +1,60 @@
 * {
   box-sizing: border-box;
 }
-html {
+/*html {
   font-family: 'EB Garamond', serif;
-  /*background-color: black;*/
   background-color: black;
-	/*background: rgba(0,0,0,0.50) url("blue.jpg") no-repeat center center fixed;
-  	background-size: 100vw 100vh;*/
+  background-size: 100vw 100vh;
     -webkit-animation: fadein 2s;
   color: white;
-}
+}*/
 .footer {
   text-align: center;
   margin-top: 40px;
 }
+html {
+  margin: auto;
+	height: 100%;
+	/* max-height: 782px; */
+  font-family: 'EB Garamond', serif;
+  color: black;
+}
+#top {
+  -webkit-animation: fadein 2s;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:
+		url('http://www.clker.com/cliparts/q/L/o/j/C/Q/forest-hi.png'),
+		url('http://www.inserthtml.com/parallax/trees.png'),
+		url('https://db.tt/cKICP4Xj'),
+		url('http://www.augstudy.com/images/theme/impress/bg_mountains.png'),
+		url('https://db.tt/vKBcgeOj');
+	background-repeat: repeat-x;
+	background-position:
+		0 20%,
+		0 95%,
+		0 0,
+		0 100%,
+		0 0;
+	background-size:
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position:
+			-5000px 20%,
+			-800px 95%,
+			500px 0,
+			1000px 100%,
+			400px 0;
+		}
+	}
+
 @import "bourbon";
 
 $social-color-pallete: (
@@ -120,10 +161,11 @@ a {
 }
 
 .brand-icons {
-  background-color: black;
+  background-color: inherit;
   padding: 10px 0;
   width: 75%;
   margin: auto;
+  text-align: center;
 }
 
 @-webkit-keyframes fadein {
@@ -157,6 +199,7 @@ h1 {
   text-align: center;
   font-size: 48px;
   padding-top: 80px;
+  color: white;
 }
 h2 {
   font-family: 'Josefin Sans', sans-serif;
