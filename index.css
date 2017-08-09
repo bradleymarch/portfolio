@@ -194,6 +194,9 @@ a {
 .keyboardPic {
   display: none;
 }
+.projectsTitle {
+  color: teal !important;
+}
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
@@ -218,7 +221,7 @@ h4 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   text-align: center;
-  color: white;
+  color: teal;
   padding-top: 24px;
   font-weight: normal;
 }
