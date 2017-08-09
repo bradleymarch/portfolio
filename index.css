@@ -134,6 +134,13 @@ a {
   nav a {
     display: none;
   }
+  .navAmedia {
+    display: inline-block !important;
+    margin: auto;
+    width: 90px;
+    height: 60px;
+    padding-bottom: 30px;
+  }
   .keyboardPic {
     display: inline-block !important;
     margin: auto;
@@ -225,6 +232,16 @@ h4 {
    border-top: 1px solid teal;
    margin-top: 0px;
    width: 25%;
+}
+.hr6, .hr7, .hr8 {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid teal;
+  margin-top: 0px;
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .bioP {
   padding: 30px;
