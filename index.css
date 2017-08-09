@@ -238,10 +238,9 @@ h4 {
   height: 1px;
   border: 0;
   border-top: 1px solid teal;
-  margin-top: 0px;
   width: 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .bioP {
   padding: 30px;
