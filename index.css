@@ -20,6 +20,7 @@ html {
   color: black;
 }
 #top {
+  padding-bottom: 20px;
   -webkit-animation: fadein 2s;
 	background-color: hsla(200,40%,30%,.4);
 	background-image:
