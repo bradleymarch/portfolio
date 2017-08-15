@@ -227,6 +227,7 @@ a {
   }
   .myOccupation {
     font-size: 32px !important;
+    padding-top: 180px !important;
   }
 }
 .myName {
