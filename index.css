@@ -1,25 +1,22 @@
 * {
   box-sizing: border-box;
 }
-/*html {
-  font-family: 'EB Garamond', serif;
-  background-color: black;
-  background-size: 100vw 100vh;
-    -webkit-animation: fadein 2s;
-  color: white;
-}*/
 .footer {
   text-align: center;
   margin-top: 40px;
 }
+.myOccupation {
+  font-size: 40px;
+  padding-top: 120px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
 html {
   margin: auto;
 	height: 100%;
-	/* max-height: 782px; */
   font-family: 'EB Garamond', serif;
   color: black;
 }
-@keyframes flickerAnimation {
+/*@keyframes flickerAnimation {
   0%   { opacity:0; }
   25% { opacity:0.5; }
   50%  { opacity:1; }
@@ -52,7 +49,7 @@ html {
    -moz-animation: flickerAnimation 10s infinite;
    -o-animation: flickerAnimation 10s infinite;
     animation: flickerAnimation 10s infinite;
-}
+}*/
 #top {
   padding-bottom: 20px;
   -webkit-animation: fadein 2s;
@@ -71,12 +68,12 @@ html {
 		0 100%,
 		0 0;
 	background-size:
-		2500px,
+		2000px,
 		800px,
 		500px 200px,
-		1000px,
+		800px,
 		400px 260px;
-	animation: 50s para infinite linear;
+	animation: 500s para infinite linear;
 	}
 
 @keyframes para {
@@ -225,12 +222,30 @@ a {
     height: 60px;
     padding-bottom: 30px;
   }
+  .myName {
+    font-size: 52px !important;
+  }
+  .myOccupation {
+    font-size: 32px !important;
+  }
+}
+.myName {
+  font-size:100px;
+  margin-top: 40px;
+  padding-top: 140px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+.beerbossH3 {
+  margin-top: 0px;
 }
 .keyboardPic {
   display: none;
 }
-.projectsTitle {
+.projectsTitle, .aboutMeTitle {
   color: teal !important;
+}
+.projectsTitle {
+  margin-bottom: 0px;
 }
 h1 {
   font-family: 'Josefin Sans', sans-serif;
@@ -327,10 +342,14 @@ h4 {
   padding: 30px;
 }
 .mePic {
-  height: 45%;
-  width: 45%;
+  height: 35%;
+  width: 35%;
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  border-radius: 50%;
 }
 .bio {
   width: 75%;
@@ -367,7 +386,16 @@ nav a:hover {
 }
 .navA {
   margin-top:20px;
+  font-size: 20px;
+}
+p a {
+  text-decoration: none;
+  outline: none;
+  color: teal;
+}
+p a:hover {
+  color: black;
 }
 .titleHeader {
-
+  height: 600px;
 }
