@@ -390,14 +390,15 @@ nav a:hover {
   margin-top:20px;
   font-size: 20px;
 }
-p a {
+p a, p h3{
   text-decoration: none;
   outline: none;
   color: teal;
 }
-p a:hover {
+p a:hover, p h3:hover {
   color: black;
 }
+
 .titleHeader {
   height: 600px;
 }
