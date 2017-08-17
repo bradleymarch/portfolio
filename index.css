@@ -16,40 +16,6 @@ html {
   font-family: 'EB Garamond', serif;
   color: black;
 }
-/*@keyframes flickerAnimation {
-  0%   { opacity:0; }
-  25% { opacity:0.5; }
-  50%  { opacity:1; }
-  75% { opacity:0.5; }
-  100% { opacity:0; }
-}
-@-o-keyframes flickerAnimation{
-  0%   { opacity:0; }
-  25% { opacity:0.5; }
-  50%  { opacity:1; }
-  75% { opacity:0.5; }
-  100% { opacity:0; }
-}
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:0; }
-  25% { opacity:0.5; }
-  50%  { opacity:1; }
-  75% { opacity:0.5; }
-  100% { opacity:0; }
-}
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:0; }
-  25% { opacity:0.5; }
-  50%  { opacity:1; }
-  75% { opacity:0.5; }
-  100% { opacity:0; }
-}
-.animate-flicker {
-   -webkit-animation: flickerAnimation 10s infinite;
-   -moz-animation: flickerAnimation 10s infinite;
-   -o-animation: flickerAnimation 10s infinite;
-    animation: flickerAnimation 10s infinite;
-}*/
 #top {
   padding-bottom: 20px;
   -webkit-animation: fadein 2s;
@@ -75,7 +41,6 @@ html {
 		400px 260px;
 	animation: 500s para infinite linear;
 	}
-
 @keyframes para {
 	100% {
 		background-position:
@@ -86,21 +51,13 @@ html {
 			400px 0;
 		}
 	}
-
 @import "bourbon";
 
 $social-color-pallete: (
-     facebook: #3b5998,
-     tumblr: #32506d,
-     linkedin: #007bb6,
-     twitter: #00aced,
-     google-plus: #dd4b39,
-     reddit: #8bbbe3,
-     youtube: #df1c31,
-     pinterest: #b81621,
-     github: #444,
-     envelope: #333,
-     soundcloud: #f50
+     linkedIn: #007bb6,
+     googlePlus: #dd4b39,
+     youTube: #df1c31,
+     gitHub: #444,
 );
 
 $social-default-icon-color: #fff;
@@ -111,7 +68,7 @@ $social-icon-border-radius: 5px;
 
 $brand-color: #006FC2;
 
-.icon-link {
+.iconLink {
     width: $social-icon-size;
     height: $social-icon-size;
     background-color: $social-default-btn-color;
@@ -138,22 +95,18 @@ $brand-color: #006FC2;
         }
       }
     }
-
   &.brand {
     background-color: #fff;
     .fa {
       color: $brand-color;
     }
   }
-
     &.round {
       border-radius: 50%;
     }
-
     &.round-corner {
       border-radius: $social-icon-border-radius;
     }
-
     &:hover {
       @include transition(background-color 150ms ease-in-out);
       height: $social-icon-size - $social-icon-border * 2;
@@ -166,11 +119,9 @@ $brand-color: #006FC2;
           border: $social-icon-border solid $social-color;
         }
       }
-
       .fa {
         line-height: $social-icon-size - $social-icon-border * 2;
       }
-
       @each $social-alias, $social-color in $social-color-pallete {
         .fa-#{$social-alias} {
             color: $social-color;
@@ -178,7 +129,6 @@ $brand-color: #006FC2;
         }
       }
   }
-
   .fa{
     color: $social-default-icon-color;
     line-height: $social-icon-size;
@@ -188,18 +138,16 @@ $brand-color: #006FC2;
 a {
   color: inherit;
 }
-.fa-youtube:before, .fa-linkedin:before, .fa-github:before, .fa-google-plus:before {
+.faYouTube:before, .faLinkedIn:before, .faGitHub:before, .faGooglePlus:before {
   margin: 20px;
 }
-
-.brand-icons {
+.brandIcons {
   background-color: inherit;
   padding: 10px 0;
   width: 75%;
   margin: auto;
   text-align: center;
 }
-
 @-webkit-keyframes fadein {
 	from { opacity: 0; }
 	to   { opacity: 1; }
@@ -230,9 +178,7 @@ a {
       text-align: center;
       margin: 0 auto;
   }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+  .dropdownContent {
       display: none;
       position: absolute;
       font-size: 24px;
@@ -240,11 +186,8 @@ a {
       width: 400px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
-
   }
-
-  /* Links iside the dropdown */
-  .dropdown-content a {
+  .dropdownContent a {
       color: teal;
       padding: 12px 16px;
       text-decoration: none;
@@ -252,8 +195,7 @@ a {
       text-align: center;
       margin: auto;
   }
-
-  .dropdown-content a:hover {
+  .dropdownContent a:hover {
     background-color: #f1f1f1;
     color: black;
   }
