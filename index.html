@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <script src="jquery-3.2.1.min.js"></script>
   <script src="dist/js/smooth-scroll.js"></script> -->
-  <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 
@@ -18,16 +17,16 @@
     <button onclick="myFunction()" class="dropbtn">MENU &#9660
       </button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a class="smoothScroll" href="#top">Home</a>
+      <a class="smoothScroll" href="#about">About</a>
+      <a class="smoothScroll" href="#projects">Projects</a>
+      <a class="smoothScroll" href="#contact">Contact</a>
     </div>
   </div>
-    <a class="navA" href="#top">Home</a>
-    <a class="navA" href="#about">About</a>
-    <a class="navA" href="#projects">Projects</a>
-    <a class="navA" href="#contact">Projects</a>
+    <a class="navA smoothScroll" href="#top">Home</a>
+    <a class="navA smoothScroll" href="#about">About</a>
+    <a class="navA smoothScroll" href="#projects">Projects</a>
+    <a class="navA smoothScroll" href="#contact">Projects</a>
   </nav>
   <section class="titleHeader" id="top">
     <h1 class="myName">Bradley J. March</h1>
@@ -105,6 +104,11 @@
       <!-- <script>
       var scroll = new SmoothScroll('a[href*="#projects"]');
     </script> -->
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./smoothscroll.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>
   </html>
