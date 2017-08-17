@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bradley J. March - Software Engineer</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src="jquery-3.2.1.min.js"></script>
-    <script src="dist/js/smooth-scroll.js"></script> -->
-  </head>
-  <body>
-    <nav class="topNav" id="nav">
-      <a class="navAmedia" href="#top"><img class="keyboardPic" src="keyboard.png" alt="icon"></a>
-      <a class="navA" href="#top">Home</a>
-      <a class="navA" href="#about">About</a>
-      <a class="navA" href="#projects">Projects</a>
-      <a class="navA" href="#contact">Contact</a>
-    </nav>
-    <section class="titleHeader" id="top">
-      <h1 class="myName">Bradley J. March</h1>
-      <h2 class="myOccupation">Software Engineer - Based in the Twin Cities</h2>
-      <hr class="hr1">
+<head>
+  <meta charset="utf-8">
+  <title>Bradley J. March - Software Engineer</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script src="jquery-3.2.1.min.js"></script>
+  <script src="dist/js/smooth-scroll.js"></script> -->
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+  <nav class="topNav" id="nav">
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">MENU &#9660
+      </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+    <a class="navA" href="#top">Home</a>
+    <a class="navA" href="#about">About</a>
+    <a class="navA" href="#projects">Projects</a>
+    <a class="navA" href="#contact">Projects</a>
+  </nav>
+  <section class="titleHeader" id="top">
+    <h1 class="myName">Bradley J. March</h1>
+    <h2 class="myOccupation">Software Engineer - Based in the Twin Cities</h2>
+    <hr class="hr1">
+  </section>
+  <header>
+    <h1 class="projectsTitle" id="projects">Projects</h1>
+  </header>
+  <div class="projectsDiv">
+    <section class="beerboss">
+      <h3 class="beerbossH3"><a href="https://pure-inlet-71931.herokuapp.com/" target="_blank">Beer Boss</a></h3>
+      <p class="projectsP">Here is my favorite full-stack app which features React, Redux, and Node.  It's called Beer Boss.  The beer boss will tell you what breweries and beers to try.  Cheers!</p>
+      <hr class="hr8">
+      <a href="https://pure-inlet-71931.herokuapp.com/" target="_blank"><img class="beerbossPic" src="beerbossMobile.png" alt=""></a>
+      <hr class="hr8">
+      <p><a href="http://www.github.com/bradleymarch/beerboss" target="_blank">Beer Boss Github Repo</a></p>
     </section>
+    <section class="weatherwear">
+      <h3><a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank">Weatherwear</a></h3>
+      <p class="projectsP">This is my full-stack Node project, with an emphasis on Node and the backend.  This app will translate your location's forecast into a suggested outfit!  I call it Weatherwear.</p>
+      <hr class="hr7">
+      <a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank"><img class="weatherwearPic" src="weatherwearLaptop.png" alt=""></a>
+      <hr class="hr7">
+      <p><a href="http://www.github.com/bradleymarch/weatherwear" target="_blank">Weatherwear Github Repo</a></p>
+    </section>
+    <section class="appetite">
+      <h3><a href="https://bradleymarch.github.io/APPetite/" target="_blank">APPetite</a></h3>
+      <p class="projectsP">This is my first capstone project, entitled APPetite.
+        It's a frontend app focusing on HTML, CSS, and jQuery.
+        Pairing up with the USDA nutrient database, APPetite will shoot out fast facts about whatever food you may be craving!</p>
+        <hr class="hr6">
+        <a href="https://bradleymarch.github.io/APPetite/" target="_blank"><img class="appetitePic" src="appetiteMobile.png" alt=""></a>
+        <hr class="hr6">
+        <p><a href="http://www.github.com/bradleymarch/APPetite" target="_blank">APPetite Github Repo</a></p>
+      </section>
+    </div>
     <header>
-      <h1 class="projectsTitle" id="projects">Projects</h1>
+      <h1 class="aboutMeTitle" id="about">About Me</h1>
     </header>
-      <div class="projectsDiv">
-        <section class="beerboss">
-          <h3 class="beerbossH3"><a href="https://pure-inlet-71931.herokuapp.com/" target="_blank">Beer Boss</a></h3>
-            <p class="projectsP">Here is my favorite full-stack app which features React, Redux, and Node.  It's called Beer Boss.  The beer boss will tell you what breweries and beers to try.  Cheers!</p>
-            <hr class="hr8">
-            <a href="https://pure-inlet-71931.herokuapp.com/" target="_blank"><img class="beerbossPic" src="beerbossMobile.png" alt=""></a>
-            <hr class="hr8">
-            <p><a href="http://www.github.com/bradleymarch/beerboss" target="_blank">Beer Boss Github Repo</a></p>
-        </section>
-        <section class="weatherwear">
-        <h3><a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank">Weatherwear</a></h3>
-          <p class="projectsP">This is my full-stack Node project, with an emphasis on Node and the backend.  This app will translate your location's forecast into a suggested outfit!  I call it Weatherwear.</p>
-          <hr class="hr7">
-          <a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank"><img class="weatherwearPic" src="weatherwearLaptop.png" alt=""></a>
-          <hr class="hr7">
-          <p><a href="http://www.github.com/bradleymarch/weatherwear" target="_blank">Weatherwear Github Repo</a></p>
-        </section>
-        <section class="appetite">
-          <h3><a href="https://bradleymarch.github.io/APPetite/" target="_blank">APPetite</a></h3>
-            <p class="projectsP">This is my first capstone project, entitled APPetite.
-            It's a frontend app focusing on HTML, CSS, and jQuery.
-          Pairing up with the USDA nutrient database, APPetite will shoot out fast facts about whatever food you may be craving!</p>
-            <hr class="hr6">
-            <a href="https://bradleymarch.github.io/APPetite/" target="_blank"><img class="appetitePic" src="appetiteMobile.png" alt=""></a>
-            <hr class="hr6">
-            <p><a href="http://www.github.com/bradleymarch/APPetite" target="_blank">APPetite Github Repo</a></p>
-        </section>
-      </div>
-      <header>
-        <h1 class="aboutMeTitle" id="about">About Me</h1>
-      </header>
-      <div>
-        <img class="mePic" src="me.jpg" alt="Me">
-      </div>
+    <div>
+      <img class="mePic" src="me.jpg" alt="Me">
+    </div>
     <section class="bio">
       <p class="bioP">I am a web developer based in Minneapolis-St. Paul and recent graduate of the Full-Stack Web Development Program @ Thinkful. I absolutely love programming because I thrive in an
-         envionment where I can be both analytical [solving problems] and creative {creating useful applications}.
-       </p>
-        <hr class="hr3">
+        envionment where I can be both analytical [solving problems] and creative {creating useful applications}.
+      </p>
+      <hr class="hr3">
       <p class="bioP">Seeing this hard work come to life on the page is extremely rewarding to me.</p>
-        <hr class="hr4">
+      <hr class="hr4">
       <p class="bioP">I have a background in K-12 Music Education and worked as an inner-city band
         director before "retiring" from teaching to pursue web development full time.
         I feel my unique life experiences have shaped a creative outlook, hard work ethic,
         and a get it done attitude that employers will be excited about. <br><br>As an educator,
         I was always an advocate of life-long learning and I carry that into my day to
         day rituals and routines. I'm thrilled to now continue a life-long passion of mine
-         full time!</p>
+        full time!</p>
         <hr class="hr5">
-      <p class="bioP">Beyond web development, you can find me performing on trombone in various groups
-        throughout the Minneapolis-St. Paul metro area, exploring nature, grilling meat, enjoying a local craft brew, or watching
-      reruns of Star Trek: TNG.</p>
-    </section>
-    </div>
-    <footer class="footer" id="contact">
-      <h3>bradleymarch@gmail.com</h3>
-      <h4>Check out my social media pages!</h4>
+        <p class="bioP">Beyond web development, you can find me performing on trombone in various groups
+          throughout the Minneapolis-St. Paul metro area, exploring nature, grilling meat, enjoying a local craft brew, or watching
+          reruns of Star Trek: TNG.</p>
+        </section>
+      </div>
+      <footer class="footer" id="contact">
+        <h3>bradleymarch@gmail.com</h3>
+        <h4>Check out my social media pages!</h4>
         <div class="brand-icons">
           <a href="https://www.linkedin.com/in/bradley-march-54ab79144/" class="icon-link linkedin brand"><i class="fa fa-linkedin"></i></a>
           <a href="https://github.com/bradleymarch" class="icon-link github brand"><i class="fa fa-github"></i></a>
@@ -90,9 +100,10 @@
           <a href="https://www.youtube.com/channel/UCs8Qr-J2bxksgOOx1mtig8Q" class="icon-link youtube brand"><i class="fa fa-youtube"></i></a>
         </div>
         <div class="footerCopyright">© March Web Development 2017</div>
-    </footer>
-    <!-- <script>
-	     var scroll = new SmoothScroll('a[href*="#projects"]');
+      </footer>
+      <!-- <script>
+      var scroll = new SmoothScroll('a[href*="#projects"]');
     </script> -->
+    <script type="text/javascript" src="./index.js"></script>
   </body>
-</html>
+  </html>
