@@ -438,6 +438,7 @@ nav a:hover {
 }
 .h3a {
   text-decoration: none;
+  display: inline-block;
 }
 p a, p h3{
   text-decoration: none;
