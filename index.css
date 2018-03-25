@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  color: #02715A;
+
 }
 .footer {
   text-align: center;
@@ -14,7 +16,7 @@
 html {
   margin: auto;
 	height: 100%;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: black;
 }
 /*@keyframes flickerAnimation {
@@ -52,7 +54,7 @@ html {
     animation: flickerAnimation 10s infinite;
 }*/
 #top {
-  background-image: url('mpls.jpg');
+  background-image: url('photo.jpg');
   background-size: cover;
 }
 /*#top {
@@ -356,24 +358,24 @@ h4 {
 .hr1 {
    width: 66%;
    display: block;
-   height: 1px;
+   height: 0px;
    border: 0;
    margin-bottom: 25px;
-   border-top: 1px solid white;
+   border-top: 2px solid white;
 }
 .hr2 {
    width: 66%;
    display: block;
-   height: 1px;
+   height: 0px;
    border: 0;
    margin-top: 25px;
-   border-top: 1px solid white;
+   border-top: 2px solid white;
 }
 .hr3, .hr4, .hr5 {
     display: block;
    height: 1px;
    border: 0;
-   border-top: 1px solid #4A6E9E;
+   border-top: 2px solid #02715A;
    margin-top: 0px;
    width: 25%;
 }
@@ -381,7 +383,7 @@ h4 {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #4A6E9E;
+  border-top: 2px solid #02715A;
   width: 20%;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -420,6 +422,8 @@ nav {
   text-align: center;
   padding-top: 20px;
 }
+
+
 nav a {
   margin-left: 80px;
   margin-right: 80px;
