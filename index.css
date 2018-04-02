@@ -18,6 +18,8 @@ html {
 	height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: black;
+  -webkit-animation: fadein 2s;
+
 }
 
 .maintenance-span {
