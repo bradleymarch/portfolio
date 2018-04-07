@@ -12,6 +12,27 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+  <script type="text/javascript">
+            var pictureRoutes = ['b.jpg','b2.jpg'];
+            var currentPhoto = -1;
+            //preload the images for smooth animation
+            var imgArr = new Array();
+            for(i=0; i < pictureRoutes.length; i++) {
+                imgArr[i] = new Image();
+                imgArr[i].src = pictureRoutes[i];
+            }
+
+            function switchPhoto() {
+                currentPhoto = (++currentPhoto > pictureRoutes.length-1)? 0 : currentPhoto;
+                theContent.src = imgArr[currentPhoto].src;
+                setTimeout(switchPhoto,5000);
+            }
+
+            window.onload=function() {
+                theContent = document.getElementById('swapPhoto');
+                switchPhoto();
+            }
+        </script>
 </head>
 <body>
   <nav class="topNav" id="nav">
@@ -49,8 +70,7 @@
     </section>
     <section class="weatherwear">
       <h3><a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank">Weatherwear</a></h3>
-      <p class="projectsP">This is a full-stack project with an emphasis on Node and the backend.  This app will translate your location's forecast into a suggested outfit.  I call it Weatherwear.
-      <span class="maintenance-span">*Currently down for maintenance.  Check back soon for updates!*</span></p>
+      <p class="projectsP">This is a full-stack project with an emphasis on Node and the backend.  This app will translate your location's forecast into a suggested outfit.  I call it Weatherwear.</p>
       <hr class="hr7">
       <a href="http://serene-taiga-87972.herokuapp.com/index.html" target="_blank"><img class="weatherwearPic" src="weatherwearLaptop.png" alt=""></a>
       <hr class="hr7">
@@ -71,7 +91,7 @@
       <h1 class="aboutMeTitle" id="about">About Me</h1>
     </header>
     <div>
-      <img class="mePic" src="bl.png" alt="Me">
+      <img class="mePic" src="" id="swapPhoto" alt="Me">
     </div>
     <section class="bio">
       <p class="bioP">I am a web developer based in Minneapolis-St. Paul and graduate of the Full-Stack Web Development Program @ Thinkful. I absolutely love programming because I thrive in an

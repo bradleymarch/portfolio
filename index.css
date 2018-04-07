@@ -63,7 +63,7 @@ html {
     animation: flickerAnimation 10s infinite;
 }*/
 #top {
-  background-image: url('photo.jpg');
+  background-image: url('winter.jpg');
   background-size: cover;
 }
 /*#top {
@@ -280,7 +280,7 @@ a {
     display: none;
   }
   .myName {
-    font-size: 52px !important;
+    font-size: 64px !important;
   }
   .myOccupation {
     font-size: 32px !important;
@@ -358,6 +358,7 @@ h4 {
   height: 30%;
   width: 30%;
   border-radius: 16px;
+  opacity: .9;
 }
 .weatherwearPic {
   text-align: center;
